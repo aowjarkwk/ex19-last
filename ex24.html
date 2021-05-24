@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>시멘틱 태그</title>
+    <!-- HTML5 시멘틱(Semantic) : 의미론적 -->
+    <!-- 웹사이트의 공통적인 공간 구성요소를 태그 형식으로 분류한 것 -->
+    <!-- 사용하는 이유: 유지 보수가 쉽고, 검색이 용이하다. -->
+    <!-- header : 상위공간(헤더)를 의미 -->
+    <!-- nav : 네비게이션(메뉴) -->
+    <!-- aside : 사이드 공간 -->
+    <!-- section : 중간 내용을 다루는 공간  -->
+    <!-- article : 섹션안에서 글자를 주로 다루는 공간 -->
+    <!-- footer : 바닥공간을 의미함. -->
+    <!-- <div id="header"> -->
+    <style>
+        * {
+            border: 1px solid red;
+        }
+
+        section {
+            /* inline속성으로 만들고, 오른쪽에 정렬한다. */
+            float: left;
+            width: 80%;
+        }
+
+        aside {
+            float: right;
+            width: 15%;
+        }
+
+        footer {
+            /* float속성을 기본값으로 설정(클리어) */
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 시멘틱 태그들 : div와 동일하게 block타입이다. -->
+    <header>헤더영역 타이틀</header>
+    <nav>
+        <ul>
+            <li><a href="#">메뉴 1</a></li>
+            <li><a href="#">메뉴 2</a></li>
+            <li><a href="#">메뉴 3</a></li>
+        </ul>
+    </nav>
+    <section>
+        <article>
+            <h2>내용 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo corrupti natus quos! Ducimus minus
+                numquam deserunt earum praesentium inventore nobis provident harum, quod voluptates. In voluptate
+                similique possimus debitis cum!</p>
+        </article>
+        <article>
+            <h2>내용 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo corrupti natus quos! Ducimus minus
+                numquam deserunt earum praesentium inventore nobis provident harum, quod voluptates. In voluptate
+                similique possimus debitis cum!</p>
+        </article>
+    </section>
+    <aside>
+        <ul>
+            <li><a href="#">사이드메뉴 1</a></li>
+            <li><a href="#">사이드메뉴 2</a></li>
+            <li><a href="#">사이드메뉴 3</a></li>
+        </ul>
+    </aside>
+    <footer>
+        <p>서울시 노원구 상계동 111번지</p>
+    </footer>
+</body>
+
+</html>
